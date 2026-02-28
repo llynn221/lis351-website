@@ -1,114 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lynn Zhou -- About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-  
-    <!--Header Section-->
-    <header> 
-        <p class="site-title">Lynn Zhou</p>
-        <nav aria-label="Primary">
+    <!-- Header Section -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <p class="brand">Lynn Zhou<span class="dot">.</span></p>
+
+        <nav class="site-nav" aria-label="Primary">
           <ul>
-            <li><a href="#"> Home </a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-  <main id="home">
-    <!-- =========================================================
-    STEP 3: Hero section + “Get Started button” as a link
-    ========================================================= -->
-
-    <section aria-label="Hero section">
-        <h1>Welcome! I'm Lynn Zhou</h1>
-        <p>I’m a student exploring how economics, data, and design shape the way we understand the world.</p>
-        <p>
-          <a href="#about">Get Started!</a>
-        </p>
-        <img src="images/hero.jpg" alt="mountain landscape at sunrise" width="800">
-
+    <main id="home">
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero section">
+        <div class="container hero-content">
+          <h1>Welcome! I'm Lynn Zhou</h1>
+          <p class="hero-subhead">
+            I’m a student exploring how economics, data, and design shape the way we understand the world.
+          </p>
+          <p>
+            <a class="btn btn-dark" href="#about">Get Started!</a>
+          </p>
+          <img src="images/hero.jpg" alt="mountain landscape at sunrise" width="800" />
+        </div>
       </section>
 
+      <!-- Features -->
+      <section id="about" class="features">
+        <div class="container">
+          <h2>About Me</h2>
 
-    <!-- =========================================================
-    STEP 4: Features section (3 blocks) + featured content section
-    ========================================================= -->
-    <section id="about">
-        <h2>About Me</h2>
-     
-        <h3>Background</h3>
-        <p>I am currently studying Economics and Information Science. My academic journey focuses on understanding systems, incentives, and how structured information supports better decision-making.</p>
+          <div class="features-grid">
+            <div class="feature">
+              <div class="icon">✦</div>
+              <h3>Background</h3>
+              <p>
+                I am currently studying Economics and Information Science. My academic journey focuses on understanding
+                systems, incentives, and how structured information supports better decision-making.
+              </p>
+            </div>
 
-        <h3>Academic Interests</h3>
-        <p>My interests include public policy, data visualization, and database design. I enjoy analyzing how information flows and how structure improves clarity</p>
-        <ul>
-            <li>Public policy analysis</li>
-            <li>Data visualization</li>
-            <li>Database systems</li>
-            <li>Behavioral economics</li>
-        </ul>
+            <div class="feature">
+              <div class="icon">▦</div>
+              <h3>Academic Interests</h3>
+              <p>
+                My interests include public policy, data visualization, and database design. I enjoy analyzing how
+                information flows and how structure improves clarity
+              </p>
+              <ul>
+                <li>Public policy analysis</li>
+                <li>Data visualization</li>
+                <li>Database systems</li>
+                <li>Behavioral economics</li>
+              </ul>
+            </div>
 
-        <h3>Hobbies</h3>
-        <p>Outside of academics, I enjoy photography, playing piano, and reading. Creative activities help me think more deeply and reflect on ideas from different perspectives.</p>
-    
-    </section>
+            <div class="feature">
+              <div class="icon">♫</div>
+              <h3>Hobbies</h3>
+              <p>
+                Outside of academics, I enjoy photography, playing piano, and reading. Creative activities help me
+                think more deeply and reflect on ideas from different perspectives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Featured Content -->
+      <section id="projects" class="featured">
+        <div class="container">
+          <h2 class="section-title">How I Think About Information &amp; Design</h2>
+          <p class="section-lede">
+            I believe information should be structured clearly and ethically. Whether designing a webpage, building a
+            database, or analyzing economic systems, clarity and accessibility matter. Good design is not just about
+            appearance—it is about helping people understand ideas quickly and confidently.
+          </p>
+          <div class="media">
+            <img
+              src="images/datavisualization.jpg"
+              alt="Data visualization dashboard with charts and graphs"
+              width="800"
+            />
+          </div>
+        </div>
+      </section>
 
-    <!--Featured Content-->
-    <section id="projects">
-        <h2>How I Think About Information &amp; Design</h2>
-        <p>I believe information should be structured clearly and ethically. Whether designing a webpage, building a database, or analyzing economic systems, clarity and accessibility matter. Good design is not just about appearance—it is about helping people understand ideas quickly and confidently.</p>
-        <img src="images/datavisualization.jpg" alt="Data visualization dashboard with charts and graphs" width="800">
-    </section>
+      <!-- Secondary content blocks -->
+      <section class="secondary" aria-label="Additional information">
+        <div class="container">
+          <h2>More About Me</h2>
 
-    <!-- =========================================================
-    STEP 5: Two secondary content blocks + CTA section 
-    ========================================================= -->
-     <section aria-label="Additional information">
-        <h2>More About Me</h2>
+          <div class="secondary-grid">
+            <article class="card">
+              <div class="card-text">
+                <h3>Community &amp; Culture</h3>
+                <p>
+                  Growing up in China shaped how I understand community, tradition, and shared responsibility. Cultural
+                  identity influences how I approach teamwork, learning, and communication.
+                </p>
+                <a class="btn btn-outline" href="#contact">Contact</a>
+              </div>
+              <div
+                class="card-image"
+                style="background-image: url('images/culturebackground.jpg');"
+                aria-label="Street scene in China with traditional architecture"
+              ></div>
+            </article>
 
-        <h3>Community &amp; Culture</h3>
-        <p>Growing up in China shaped how I understand community, tradition, and shared responsibility. Cultural identity influences how I approach teamwork, learning, and communication.</p>
-        <img src="images/culturebackground.jpg" alt="Street scene in China with traditional architecture" width="800">
+            <article class="card">
+              <div class="card-text">
+                <h3>Looking Ahead</h3>
+                <p>
+                  In the future, I hope to combine economics and data skills to contribute to public policy, research,
+                  or design-oriented problem solving. I am especially interested in how structured information can
+                  support better decisions at both individual and institutional levels.
+                </p>
+                <a class="btn btn-dark" href="#projects">View My Projects</a>
+              </div>
+              <div
+                class="card-image"
+                style="background-image: url('images/desk.jpg');"
+                aria-label="Minimalist desk workspace with laptop"
+              ></div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <h3>Looking Ahead</h3>
-        <p>In the future, I hope to combine economics and data skills to contribute to public policy, research, or design-oriented problem solving. I am especially interested in how structured information can support better decisions at both individual and institutional levels.</p>
-        <img src="images/Desk.jpg" alt="Minimalist desk workspace with laptop" width="800">
-     </section>
-    
-    <!--Call to Action-->
-    <section id="contact" aria-label="Call to action">
-        <h2>Heard Enough?</h2>
-        <p>If you'd like to learn more about my academic projects, feel free to explore further.</p>
-        <a href="#projects">View My Projects</a>
-    </section>
+      <!-- Call to Action -->
+      <section id="contact" class="cta" aria-label="Call to action">
+        <div class="container cta-inner">
+          <h2>Heard Enough?</h2>
+          <p>If you'd like to learn more about my academic projects, feel free to explore further.</p>
+          <a class="btn btn-dark" href="#projects">View My Projects</a>
+        </div>
+      </section>
+    </main>
 
-  </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <p>© 2026 Lynn Zhou</p>
+          <p><a href="#contact">Contact Me</a></p>
+        </div>
 
-    <!-- =========================================================
-    STEP 6: Footer 
-    ========================================================= -->
-    <footer>
-    <p>© 2026 Lynn Zhou</p>
-
-    <ul>
-      <li><a href="#contact">Contact Me</a></li>
-      <li>
-        <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer">
-          University Website
-        </a>
-      </li>
-    </ul>
-  </footer>
-
-</body>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>School</h4>
+            <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer">University Website</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
